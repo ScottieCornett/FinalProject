@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Scottie\\OneDrive\\Desktop\\Code KY Project\\FinalProject\\FinalProject\\FinalProject.csproj": {}
+    "C:\\Users\\Scottie\\OneDrive\\Desktop\\Code KY Project\\FinalProject\\FinalProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Scottie\\OneDrive\\Desktop\\Code KY Project\\FinalProject\\FinalProject\\FinalProject.csproj": {
+    "C:\\Users\\Scottie\\OneDrive\\Desktop\\Code KY Project\\FinalProject\\FinalProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Scottie\\OneDrive\\Desktop\\Code KY Project\\FinalProject\\FinalProject\\FinalProject.csproj",
+        "projectUniqueName": "C:\\Users\\Scottie\\OneDrive\\Desktop\\Code KY Project\\FinalProject\\FinalProject.csproj",
         "projectName": "FinalProject",
-        "projectPath": "C:\\Users\\Scottie\\OneDrive\\Desktop\\Code KY Project\\FinalProject\\FinalProject\\FinalProject.csproj",
+        "projectPath": "C:\\Users\\Scottie\\OneDrive\\Desktop\\Code KY Project\\FinalProject\\FinalProject.csproj",
         "packagesPath": "C:\\Users\\Scottie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Scottie\\OneDrive\\Desktop\\Code KY Project\\FinalProject\\FinalProject\\obj\\",
+        "outputPath": "C:\\Users\\Scottie\\OneDrive\\Desktop\\Code KY Project\\FinalProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
