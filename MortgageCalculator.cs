@@ -23,8 +23,8 @@ namespace FinalProject
 
         public double CalculateBalance(short numberOfPaymentsMade)
         {
-            float monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEAR;
-            float numberOfPayments = years * MONTHS_IN_YEAR;
+            var monthlyInterest = GetMonthlyInterest();
+            int numberOfPayments = GetNumberOfPayments();
 
             double balance = principal
                 * (Math.Pow(1 + monthlyInterest, numberOfPayments) - Math.Pow(1 + monthlyInterest, numberOfPaymentsMade))
@@ -33,13 +33,25 @@ namespace FinalProject
         }
         public double CalculateMortgage()
         {
-            int numberOfPayments = years * MONTHS_IN_YEAR;
-            float monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEAR;
+            var numberOfPayments = GetNumberOfPayments();
+            float monthlyInterest = GetMonthlyInterest();
 
             double mortgage = principal
                 * (monthlyInterest * Math.Pow(1 + monthlyInterest, numberOfPayments))
                 / (Math.Pow(1 + monthlyInterest, numberOfPayments) - 1);
             return mortgage;
+        }
+
+        public float GetMonthlyInterest()
+        {
+            float monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEAR;
+            return monthlyInterest;
+        }
+
+        public int GetNumberOfPayments()
+        {
+            int numberOfPayments = years * MONTHS_IN_YEAR;
+            return numberOfPayments;
         }
 
     }
