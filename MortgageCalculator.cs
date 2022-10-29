@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
-    internal class MortgageCalculator
+    public class MortgageCalculator
     {
     }
 }
