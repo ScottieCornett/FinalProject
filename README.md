@@ -1,2 +1,2 @@
 # FinalProject
-This is my final project for Code Kentucky
+This console line mortgage calculator is my final project for Code Kentucky. 
