@@ -15,13 +15,20 @@ namespace FinalProject
             while (true)
             {
                 Console.Write(prompt);
-                value = Convert.ToDouble(Console.ReadLine());
-                if (value >= min && value <= max)
+                var input = Console.ReadLine();
+                if (String.IsNullOrWhiteSpace(input))
+                {
+                    Console.WriteLine("Please enter a valid value");
+                    continue;
+                }
+
+                bool parsed = double.TryParse(input, out value);
+                
+                if (parsed && value >= min && value <= max)
                     break;
-                Console.WriteLine($"Please enter a value between {min} and {max}");
+                Console.WriteLine("Please enter a number between " + min + " and " + max);
             }
             return value;
-
         }
     }
 }

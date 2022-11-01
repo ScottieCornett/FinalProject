@@ -12,7 +12,7 @@ namespace FinalProject
             Console.WriteLine("Enter the details of your mortgage at the prompts");
             Console.WriteLine();
 
-            int principal = (int)ConsoleReader.ReadNumber("Principal: ", 50000, 5000000);
+            int principal = (int)ConsoleReader.ReadNumber("Principal: ", 5000, 5000000);
             float annualInterest = (float)ConsoleReader.ReadNumber("Annual Interest Rate: ", 0, 30);
             byte years = (byte)ConsoleReader.ReadNumber("Period (Years): ", 0, 100);
 
@@ -21,15 +21,17 @@ namespace FinalProject
             while (true)
             {
                 Console.WriteLine("Would you like to see your payment schedule? Type 'yes' to confirm or press enter to exit");
-                var input = Console.ReadLine().ToLower();
-                if (!String.IsNullOrWhiteSpace(input))
+                string userInput = Console.ReadLine();
+                
+                if (!String.IsNullOrWhiteSpace(userInput))
                 {
-                    if (input == "yes")
+                    if (userInput == "yes")
                     {
                         MortgageReport.PrintPaymentSchedule();
                         break;
 
                     }
+                    
                     Console.WriteLine("Please enter a valid input");
                     continue;
                 }
